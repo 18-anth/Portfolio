@@ -1,0 +1,66 @@
+#map {
+	height: 500px;
+	width: 100%;
+}
+
+/***********popup****************/
+.contact-item a{
+	font-size: 24px;
+	text-decoration: none;
+	color: rgb(255, 27, 27);
+	font-family: 'Times New Roman', Times, serif;
+	background: rgb(255, 255, 255);
+	padding: 5px;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	border-radius: 100px;
+}
+.contact-item a:hover{
+	opacity: 80%;
+}
+.all#blur.active{
+	filter: blur(20px);
+	pointer-events: none;
+	user-select: none;
+}
+#popup{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: auto;
+	padding: 20px;
+	box-shadow: 0px 5px 30px rgba(255, 255, 255, 0.897);	
+	background: #fff;
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.5s;
+}
+#popup.active{
+	visibility: visible;
+	opacity: 1;
+	transition: 0.5s;
+}
+#popup a{
+	font-size: 24px;
+	text-decoration: none;
+	color: rgb(255, 27, 27);
+	font-family: 'Times New Roman', Times, serif;
+	background: #111;
+	padding: 10px;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20%;
+	border-radius: 100px;
+}
+#popup a:hover{
+	opacity: 80%;
+}
+.moreText{
+	display: none;
+}
+.text.show-more .moreText{
+	display: inline;
+}
